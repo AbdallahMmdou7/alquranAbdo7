@@ -1,4 +1,5 @@
 import 'package:alquran/home_screen.dart';
+import 'package:alquran/theme_data.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: MyThemeData.lightMode,
       debugShowCheckedModeBanner: false,
       initialRoute: HomeScreen.routName,
       routes: {HomeScreen.routName: (context) => const HomeScreen()},
